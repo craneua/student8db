@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <title>ГРУПИ</title>
+  <meta name="description" 
+   content="Система обліку студентів навчального закладу">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Include Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head> 
+
+<body>
+
+<div class="container">
+
+  <!-- Start Header -->
+  <div class="row" id="header">
+    <!-- Logo -->
+    <div class="col-xs-12">
+      <div align="center">
+        <div id="centerLayer">
+          <h2>СЕРВІС ОБЛІКУ СТУДЕНТІВ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+  
+  <!-- Start SubHeader -->
+  <div class="row" id="sub-header">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-2">
+      <a class="btn btn-success btn-lg" href="groups.html" role="button">Групи</a>
+    </div>
+    <div class="col-xs-2"></div>
+    <div class="col-xs-2">
+      <a class="btn btn-success btn-lg" href="students.html" role="button">Студенти</a>
+    </div>
+    <div class="col-xs-2"></div>
+    <div class="col-xs-2">
+      <a class="btn btn-success btn-lg" href="visiting.html" role="button">Відвідування</a>
+    </div>
+    <div class="col-xs-1"></div>        
+  </div>
+  <!-- End SubHeader -->
+
+  <!-- Start ChoiceMenu -->
+  <div class="row" id="choice-menu">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-1">Група:</div>
+    <div class="col-xs-1">
+      <!-- Groups Selector -->
+      <div>
+        <select>
+          <option value="">Усі групи</option>
+          <option value="">МтМ - 21</option>
+          <option value="">МтМ - 22</option>
+          <option value="">МтМ - 23</option>
+        </select>
+      </div>  
+    </div>
+    <div class="col-xs-2"></div>
+    <div class="col-xs-2">
+      <!-- Add Student Button -->
+      <a class="btn btn-primary" href="#">Додати групу</a>
+    </div>
+    <div class="col-xs-5"></div>    
+  </div>
+  <!-- End ChoiceMenu -->
+
+  <!-- Start Main Page Content -->
+  <div class="row" id="content-columns">
+    <div class="col-xs-12" id="content-column">
+
+    <div>
+      <!-- Start Groups Listing -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th><a href="#">#</a></th>
+            <th><a href="#">Назва &uarr;</a></th>
+            <th><a href="#">Староста</a></th>
+            <th>Дії</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="#">МтМ - 21</a></td>
+            <td><a href="#">Ячменев Олег</a></td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle"
+                  data-toggle="dropdown">Дія
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><span class="label label-important"><a href="#">Редагувати</a></span></li>
+                  <li><span class="label label-important"><a href="#">Видалити</a></span></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="#">МтМ - 22</a></td>
+            <td><a href="#">Подоба Віталій</a></td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle"
+                  data-toggle="dropdown">Дія
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><span class="label label-important"><a href="#">Редагувати</a></span></li>
+                  <li><span class="label label-important"><a href="#">Видалити</a></span></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="#">МтМ - 23</a></td>
+            <td><a href="#">Іванов Андрій</a></td>
+            <td>
+        <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle"
+            data-toggle="dropdown">Дія
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><span class="label label-important"><a href="#">Редагувати</a></span></li>
+                <li><span class="label label-important"><a href="#">Видалити</a></span></li>
+              </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- End Groups Listing -->
+
+      <nav>
+        <ul class="pagination">
+          <li><a href="#">&laquo;</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </div>
+  <!-- End Main Page Content -->
+
+  <!-- Status Message -->
+  <div class="row" id="status-message">
+    <div class="col-xs-12">
+      <div class="alert alert-warning" role="alert">Запис здійснено успішно.</div>
+    </div>
+  </div>
+  <!-- End Message -->
+
+  <!-- Start Footer -->
+  <div class="row" id="footer">
+    <div class="col-xs-12">
+      <hr>
+      &copy; 2016 Сервіс обліку студентів
+    </div>
+  </div>
+  <!-- End Footer -->
+
+</div>
+<!-- End Container -->
+
+  <!-- Javascripts Section -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
